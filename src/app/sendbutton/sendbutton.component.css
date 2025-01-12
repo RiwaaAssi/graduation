@@ -1,0 +1,143 @@
+.container {
+    position: fixed; /* لجعل الحاوية ثابتة في الصفحة */
+    left: 65%;
+    transform: translateX(-50%); /* توسيط الحاوية أفقياً */
+    width: 40%; /* تعيين عرض الحاوية */
+    display: flex;
+    justify-content: center; /* لتوسيط العناصر داخل الحاوية */
+ 
+}
+
+.input-box {
+    position: relative;
+    width: 100%; /* تعيين العرض ليشغل كل الحاوية */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* لضمان تمركز حقل الإدخال */
+  
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding-left: 60px; /* زيادة المساحة لصورة الدماغ داخل الـ input */
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid #ccc;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    outline: none; /* إزالة الإطار الأسود عند التركيز */
+}
+
+input[type="text"]:focus {
+    border-color: #afaaaa; /* لون رمادي أغمق عند الكتابة */
+}
+
+.brain-icon {
+    position: absolute;
+    left: 20px; /* تعديل المسافة الأفقية لصورة الدماغ */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+}
+
+.send-button {
+    position: absolute; /* لجعل زر الإرسال يطفو فوق حقل النص */
+    right: 10px; /* المسافة من الجانب الأيمن للحاوية */
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.rectangle {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    background-color: #0084ff;;
+    border-radius: 50%;
+}
+
+.svg-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 25px;
+    stroke: white;
+}
+@media (max-width:690px) {
+    .container{
+        position: fixed; /* لجعل الحاوية ثابتة في الصفحة */
+        left: 50%;
+        transform: translateX(-50%); /* توسيط الحاوية أفقياً */
+        width: 80%; /* تعيين عرض الحاوية */
+        display: flex;
+        justify-content: center; /* لتوسيط العناصر داخل الحاوية */
+       
+    }
+}
+
+@media (max-width:930px) {
+    .container{
+        position: fixed; /* لجعل الحاوية ثابتة في الصفحة */
+        left: 50%;
+        transform: translateX(-50%); /* توسيط الحاوية أفقياً */
+        width: 45%; /* تعيين عرض الحاوية */
+        display: flex;
+        justify-content: center; /* لتوسيط العناصر داخل الحاوية */
+       
+    }
+}
+@media (max-width:940px) {
+    .container{
+        position: fixed; /* لجعل الحاوية ثابتة في الصفحة */
+        left: 75%;
+        transform: translateX(-50%); /* توسيط الحاوية أفقياً */
+        width: 45%; /* تعيين عرض الحاوية */
+        display: flex;
+        justify-content: center; /* لتوسيط العناصر داخل الحاوية */
+       
+    }
+}
+
+
+@media (max-width:700px) {
+    .container{
+        position: fixed; /* لجعل الحاوية ثابتة في الصفحة */
+        left: 43%;
+        transform: translateX(-50%); /* توسيط الحاوية أفقياً */
+        width: 60%; /* تعيين عرض الحاوية */
+        display: flex;
+        justify-content: center; /* لتوسيط العناصر داخل الحاوية */
+       
+    }
+}
+
+
+@media (max-width:699px) {
+    .container{
+        position: fixed; /* لجعل الحاوية ثابتة في الصفحة */
+        left: 50%;
+        transform: translateX(-50%); /* توسيط الحاوية أفقياً */
+        width: 68%; /* تعيين عرض الحاوية */
+        display: flex;
+        justify-content: center; /* لتوسيط العناصر داخل الحاوية */
+       
+    }
+}  
+@media (max-width:650px) {
+    .container{
+        position: fixed; /* لجعل الحاوية ثابتة في الصفحة */
+        left: 55%;
+        transform: translateX(-50%); /* توسيط الحاوية أفقياً */
+        width: 60%; /* تعيين عرض الحاوية */
+        display: flex;
+        justify-content: center; /* لتوسيط العناصر داخل الحاوية */
+       
+    }
+}  

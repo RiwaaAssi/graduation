@@ -1,0 +1,32 @@
+
+<div class="chat-container">
+  <div *ngIf="loading" class="loading-spinner">
+    <!-- يمكنك وضع مؤشر تحميل بسيط هنا -->
+    Loading...
+  </div>
+  <div  *ngIf="!loading" class="design">
+    <div class="messages" #messagesContainer>
+      <div *ngFor="let group of messages$ | async">
+        <!-- عرض التاريخ في div مستقل في الأعلى -->
+        <div class="date-header">
+          <p>{{ group.date }}</p>
+        </div>
+
+     
+        
+        <!-- عرض الرسائل الخاصة بنفس اليوم -->
+        <div *ngFor="let message of group.messages"
+             [ngClass]="{'sender': message.sender === 'jubran@gmail.com', 'receiver': message.sender !== 'jubran@gmail.com'}"
+             class="chat-message ">
+
+          <img src="./../../assets/users/user-4.jpg" width="40px" height="40px" alt="Avatar" class="avatar" *ngIf="message.sender === 'jubran@gmail.com'">
+          <img src="./../../assets/🧠.png" alt="Avatar" class="avatar" *ngIf="message.sender !== 'jubran@gmail.com'">
+          <div  class="message-content" >
+            <p>{{ message.text }}</p>
+            <small>{{ message.sendDate | date: 'shortTime' }}</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

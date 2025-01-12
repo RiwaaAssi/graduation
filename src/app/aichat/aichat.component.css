@@ -1,0 +1,332 @@
+/* aichat.component.css */
+.information-list {
+    background-color: #ffffff; /* اللون الأبيض لقائمة المعلومات */
+    padding: 20px;
+    margin: 20px; /* إضافة هوامش حول العنصر */
+    box-sizing: border-box;
+    border-radius: 30px; /* تحديد نصف القطر لجعل الزوايا مدورة */
+    width: calc(100% - 40px); /* العرض يتكيف مع محتوى الشاشة مع مراعاة الهوامش */
+    max-width: 340px; /* أقصى عرض للعنصر */
+    height: 600px;  
+    overflow: hidden; /* إزالة شريط التمرير الداخلي */
+    position: relative; /* لضمان التغطية التامة إذا كان هناك محتوى زائد */
+}
+
+.selected-conversation {
+    background-color: #858484; /* Light gray background */
+    border: #afaaaa solid 1px;
+    border-radius: 20px;
+    color: #007bff; /* Blue text */
+  }
+  
+
+.aichatting{
+display: flex;
+flex-direction: row;
+gap:30px;
+}
+
+.active-conversation {
+    background-color: #e0e0e0; /* لون الخلفية للمحادثة المحددة */
+    color: #5661F6; /* لون النص للمحادثة المحددة */
+    border-radius: 10px;
+  }
+  
+.btn {
+    width: 228px;
+    height: 50px;
+    background: #5661F6;
+    color: #ffff;
+    font-family: Mier A;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 29px;
+    border: none;
+}
+
+.new-chat {
+    display: flex;
+    gap: 10px;
+}
+
+.chatai {
+    font-family: sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: black;
+}
+
+.your-conversations {
+    display: flex;
+    gap: 80px;
+}
+
+.your-conversations p {
+    color: rgb(151, 150, 150);
+}
+
+.your-conversations button {
+    background-color: #ffff;
+    border: none;
+    color: #5661F6;
+}
+
+.thin-line {
+    width: 320px; /* عرض الخط */
+    height: 1px; /* سماكة الخط */
+    background-color: rgb(226, 225, 225); /* لون الخط */
+    margin: 10px 0;
+}
+
+.quastions {
+    display: flex;
+    align-items: center; /* يضمن أن الأيقونة والنص يكونان على نفس المستوى عموديًا */
+    gap: 8px; /* المسافة بين الأيقونة والنص (يمكن تعديلها حسب الحاجة) */
+    flex-direction: row;
+}
+
+.quastions p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+ul span {
+    font-weight: 400;
+    font-size: 16px;
+}
+.no-bullets {
+    list-style-type: none;
+    padding-left: 0; /* لإزالة المسافة البادئة الافتراضية */
+  }
+  
+
+.settings-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 280px;
+    gap: 10px;
+}
+
+.settings-button:hover {
+    background-color: #f0f0f0;
+}
+
+.icon-container {
+    background-color: #cfcdcd;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.settings-button p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box {
+    position: relative;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* لضمان تمركز حقل الإدخال */
+    padding-top: 10px; /* تقليل المسافة من الأعلى لرفع حقل الإدخال */
+    padding-bottom: 10px; /* تقليل المسافة من الأسفل إذا لزم الأمر */
+    margin-top: -155px; /* رفع الحقل للأعلى */
+    margin-left:250px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding-left: 60px; /* زيادة المساحة لصورة الدماغ داخل الـ input */
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid #ccc;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    outline: none; /* إزالة الإطار الأسود عند التركيز */
+}
+
+input[type="text"]:focus {
+    border-color: #afaaaa; /* لون رمادي أغمق عند الكتابة */
+}
+
+
+.brain-icon {
+    position: absolute;
+    left: 20px; /* تعديل المسافة الأفقية لصورة الدماغ */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+}
+
+.send-button {
+    position: absolute;
+    right: 1px; /* تعديل المسافة الأفقية لزر الإرسال */
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.rectangle {
+    width: 35px; 
+    height: 35px;
+    position: relative;
+}
+
+.svg-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 25px;
+    stroke: white;
+}
+.quastions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* محاذاة العناصر إلى اليسار */
+    gap: 10px; /* المسافة بين كل سؤال والآخر */
+  }
+  
+  .no-bullets {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* ضمان ملء العرض الكامل للحاوية */
+  }
+  
+  .question-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* محاذاة المحتوى إلى اليسار */
+    width: 100%; /* ضمان ملء العرض الكامل للحاوية */
+  }
+  
+  .hover-button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px; /* زيادة التباعد حول المحتوى */
+    border-radius: 5px; /* لجعل الزر مائل */
+    margin: 0;
+  }
+  
+  .hover-button svg {
+    margin-right: 10px;
+  }
+  
+  .hover-button:hover {
+    background-color: #f3f0f0;
+    color: #4e59f8;
+    border-radius: 10px;
+  }
+  
+  .no-bullets li {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: 100%; /* ضمان ملء العرض الكامل للحاوية */
+   
+  }
+
+
+.trash {
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+
+}
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* يمكنك تعديل الحجم */
+    font-size: 18px;
+    color: #555; /* اللون */
+    position: relative;
+}
+
+.loading-spinner::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    border: 4px solid #ccc; /* اللون الخارجي */
+    border-top-color: #555; /* اللون المتحرك */
+    border-radius: 50%;
+    position: absolute;
+    animation: spin 1s linear infinite; /* الحركة */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+  
+
+  li {
+    display: flex;
+    justify-content: space-between; /* توزيع العناصر بين اليمين والشمال */
+    align-items: center; /* محاذاة العناصر عموديًا */
+}
+
+
+.close {
+    position: relative;  /* Make the container relative to allow absolute positioning inside */
+    display: none;
+  }
+  
+  .close-btn {
+    border: none;           /* Remove button border */
+    background: transparent; /* Make background transparent */
+    position: absolute;      /* Absolute positioning */
+    right: 0;               /* Align the button to the right */
+    top: 0;                 /* Align the button to the top */
+    padding: 0;             /* Remove default padding */
+    cursor: pointer;        /* Add a pointer cursor on hover */
+  }
+  
+  .close-btn svg {
+    display: block;         /* Ensure the SVG takes up the full button space */
+  }
+  
+
+  @media (max-width: 700px) {
+    .close{
+        display: block;
+    }
+    } 

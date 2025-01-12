@@ -1,0 +1,35 @@
+
+<div class="home-container">
+  <div class="contant">
+    
+    <div >
+      <app-aichat  [ngClass]="{'aichat-hidden': !isAichatVisible}"  (conversationSelected)="onConversationSelected($event)"></app-aichat>
+    </div>
+    <div class="top">
+    <div class="icon" *ngIf="show"> 
+      <button class="icon-btn" (click)="toggleAichat()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="none" color="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button> 
+    </div>
+
+  </div>
+
+
+    <div class="chat" *ngIf="show">
+      <app-chat *ngIf="showChat"></app-chat>
+      <app-chat-box *ngIf="!showChat" [conservationId]="selectedConservationId"></app-chat-box>
+      <app-sendbutton [conservationId]="selectedConservationId" (send)="onSendMessage()"></app-sendbutton>
+    </div>
+    <div class="icon2" *ngIf="show"> 
+      <button class="icon-btn2" (click)="goHome()">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="30px" height="30px" fill="none" color="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+        </svg>
+        
+      </button> 
+    </div>
+  </div>
+</div>
+
